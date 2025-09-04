@@ -1,0 +1,22 @@
+{
+	"VsCodeTaskButtons.showCounter": false,
+	"VsCodeTaskButtons.tasks": [
+		{
+			"task": "cv-en",
+			"label": "$(globe) CV EN",
+			"tooltip": "Generate cv-en.pdf using Eisvogel"
+		},
+
+		{
+			"task": "cv-pl",
+			"label": "$(file-pdf) CV PL",
+			"tooltip": "Generate cv-pl.pdf using Eisvogel"
+		},
+
+		{
+			"task": "cv-all",
+			"label": "$(rocket) CV ALL",
+			"tooltip": "Generate all language versions"
+		}
+	]
+}

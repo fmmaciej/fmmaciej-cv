@@ -1,0 +1,40 @@
+# Compiled PDF files
+*.pdf
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# TikZ/PGF externalization cache
+*.dpth
+*.md5
+*.auxlock
+
+# minted package (syntax highlighting) cache
+_minted*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# VSCode
+.history/
+
+# macOS Finder
+.DS_Store
+
+# Ignore everything in build
+build/*
+
+# But keep generated CV PDFs
+!build/cv-pl.pdf
+!build/cv-en.pdf

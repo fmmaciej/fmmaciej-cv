@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "analytic-signal.preview-pdf",
+        "ban.spellright",
+        "bierner.markdown-mermaid",
+        "davidanson.vscode-markdownlint",
+        "gruntfuggly.todo-tree",
+        "james-yu.latex-workshop",
+        "oderwat.indent-rainbow",
+        "shd101wyy.markdown-preview-enhanced",
+        "spencerwmiles.vscode-task-buttons",
+        "usernamehw.errorlens",
+        "vscodevim.vim",
+        "yzane.markdown-pdf",
+        "yzhang.markdown-all-in-one"
+    ]
+}

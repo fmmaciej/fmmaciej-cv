@@ -1,0 +1,27 @@
+\begin{tcolorbox}[
+  enhanced,
+  frame hidden,
+  boxrule=0pt,
+  colback=white,
+  sidebyside,
+  sidebyside align=top seam,
+  sidebyside gap=8mm,
+  left=0pt, right=5mm, top=0pt, bottom=0pt,
+  righthand width=28mm,
+  segmentation style={draw=none}
+]
+
+{\Huge \textbf{\cvname}}\\[2pt]
+{\Large \cvrole}\\[8pt]
+\faEnvelope\ \href{mailto:\cvemail}{\texttt{\cvemail}}\\
+\faPhone\ \cvphone\\
+\faGlobe\ \href{\cvsiteurl}{\texttt{\cvsitetext}}\\
+\faGithub\ \href{\cvgithuburl}{\texttt{\cvgithubtext}}\\
+\faLinkedin\ \href{\cvlinkedinurl}{\texttt{\cvlinkedintext}}
+\tcblower
+\setlength{\fboxsep}{0pt}
+\setlength{\fboxrule}{0.5pt}
+\fbox{\includegraphics[width=\linewidth, trim=0 5mm 0 5mm, clip]{\cvphoto}}
+\end{tcolorbox}
+
+% \vspace{8mm}

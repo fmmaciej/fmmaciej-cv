@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cv-pl",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [ "--pl" ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "cv-en",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [ "--en" ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "cv-all",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": [ "--all" ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
