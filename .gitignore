@@ -36,5 +36,5 @@ _minted*
 build/*
 
 # But keep generated CV PDFs
-!build/cv-pl.pdf
-!build/cv-en.pdf
+!build/cv-organisciak-maciej-pl.pdf
+!build/cv-organisciak-maciej-en.pdf

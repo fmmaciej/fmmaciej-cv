@@ -14,29 +14,38 @@ specjalizującym się głównie w programowaniu backendowym oraz w systemach
 wbudowanych. Od ponad 15 lat na co dzień korzystam jedynie z systemu Linux, co daje
 mi solidne podstawy w programowaniu niskopoziomowym i rozwiązywaniu problemów
 systemowych. Moje kompetencje obejmują C, C++, Python, Bash, Rust i TypeScript,
-a większość moich projektów koncentrowała się na stosie sieciowym. Chętnie rozwijam
-swoje umiejętności w obszarze backendu i dążę do poszerzania wiedzy w kierunku AI/ML.
+a większość moich projektów koncentrowała się na stosie sieciowym.
+Lubię dzielić się wiedzą, wspierać współpracowników, mam doswiaczenie w mentoringu.
+Jestem takze otwarty na dalszą naukę i rozwój, szczególnie w zakresie
+Linux, backendu oraz AI/ML.
 
 ## Doświadczenie
 
-## 2024.05 - 2025.09 · Sii Polska · Embedded C Developer
+## Sii Polska (6 lat 9 miesięcy)
+
+### 2024.05 - 2025.09 · Embedded C Developer
 
 Członek zespołu zajmującego się rozwojem i utrzymaniem protokołu RDE w oprogramowaniu
 układowym kart sieciowych Intel RDMA. Dodatkowo, w ramach własnej inicjatywy,
 opanowałem TypeScript i opracowałem dwie wtyczki do Visual Studio Code, które
-znacząco zoptymalizowały procesy projektowe zespołu.  
+znacząco zoptymalizowały procesy projektowe zespołu.
+Dodatkowo przygotowałem kilka narzędzi w Pythonie, które ułatwiły codzienną pracę
+przy rozwoju i walidacji.  
 Zespół: 15 osób.
 
 **Zakres obowiązków:**
 
-- rozwój nowych funkcjonalności
-- usuwanie błędów
-- implementacja funkcji zarządzania RDE
+- Rozwój nowych funkcjonalności
+- Usuwanie błędów
+- Implementacja funkcji zarządzania RDE
 
 **Technologie:**
-Embedded C, Windows, PowerShell, Linux, Bash, Python, TypeScript
+Embedded C, Network Stack, RDMA, Windows, PowerShell, Linux, Bash, Python, TypeScript
 
-### 2022.01 - 2024.05 · Sii Polska · Python Developer
+### 2022.01 - 2024.05 · Python Developer
+
+*(Równolegle pełniłem rolę Administratora Systemów Linux w
+okresie 2022.01–2023.05)*
 
 Członek międzynarodowego zespołu zlokalizowanego w monachijskim biurze Intela.
 Głównym celem projektu była walidacja sterowników GPU Intela w systemie Linux
@@ -46,18 +55,27 @@ Zespół: 6 osób.
 
 **Zakres obowiązków:**  
 
-- rozwój frameworka w Pythonie odpowiedzialnego za przygotowanie środowiska,
-  kompilację przydzielonych aplikacji i uruchamianie testów (przy użyciu
-  niestandardowych skryptów GDB)
+- Tworzenie frameworka w Pythonie odpowiedzialnego za przygotowanie środowiska,
+    kompilację wyznaczonych aplikacji i uruchamianie testów (za pomocą własnych
+    skryptów GDB)
+- Ścisła współpraca z kodem w C++ w celu zapewnienia poprawnej kompilacji i
+    integracji testów aplikacji naukowych (C++/DPC++/SYCL)
+- Wprowadzanie drobnych poprawek i modyfikacji w kodzie C++ wspierających zadania
+    walidacyjne
 
 **Technologie:**
 Python, CMake, Bash, GDB-oneAPI, Linux
 
-### 2019.01 - 2022.01 · Sii Polska · Linux System Administrator
+### 2019.01 - 2023.05 · Linux System Administrator
 
-Celem głównym projektu była walidacja sterowników sieciowych RDMA Intela dla
-kart sieciowych krzemowych (NIC) w różnych dystrybucjach Linuxa (RedHat, SLES,
-Ubuntu, CentOS, Debian, OpenEuler, Anolis).  
+*(Równolegle pełniłem rolę Python Developera w
+okresie 2022.01–2023.05)*
+
+Głównym celem projektu była walidacja sterowników kart sieciowych RDMA Intela
+w róznych dystrybucjach Linuksa (RedHat, SLES, Ubuntu, CentOS, Debian, Rocky
+Linux, OpenEuler, Anolis). Oprócz obowiązków technicznych pełniłem rolę asesora
+technicznego podczas wielu procesów rekrutacyjnych. Prowadziłem mentoring dwóch
+inżynierów, każdy przez okolo rok, wspierając ich rozwój zawodowy.  
 Zespół: 6 osób.
 
 **Zakres obowiązków:**
@@ -68,58 +86,59 @@ Zespół: 6 osób.
 - raportowanie i śledzenie błędów
 
 **Technologie:**
-Administracja systemami Linux, Bash, Python, Ansible, TCL
+Administracja systemami Linux, Network Stack, RDMA, Bash, Python, Ansible, TCL
 
-### 2018.09 - 2019.01 · Natek Polska · C++ Developer
+## Natek Polska (3 miesiące)
 
-Członek zespołu rozwijającego oprogramowanie w C++ dla zabezpieczonych układów
-smartcard stosowanych w kartach płatniczych i dokumentach tożsamości.
+### 2018.09 - 2019.01 · C++ Developer
 
-**Zakres** obowiązków:
+Członek zespołu rozwijającego oprogramowanie w C++ dla bezpiecznych układów
+stosowanych w kartach płatniczych.
+Główny wkład obejmował utrzymanie kodu i naprawę błędów, a przy tym zdobycie
+doświadczenia z praktykami bezpiecznego programowania, ograniczeniami sprzętowymi
+oraz dużą bazą kodu C++.
 
-- utrzymanie kodu i poprawa błędów
+**Zakres obowiązków:**
+
+- Utrzymanie i rozwój istniejącej bazy kodu w C++
+- Poprawianie błędów
+- Współpraca z zespołem w zakresie procesów bezpiecznego wytwarzania oprogramowania
 
 **Technologie:**
 C++, Windows, Cygwin
 
-### 01.2015 - 07.2016 · Politechnika Łódzka · Technik Laboratoryjny
+## Politechnika Łódzka (1 rok 6 miesięcy)
+
+### 2015.01 - 2016.07 · Technik Laboratoryjny
 
 **Zakres obowiązków:**  
 
-- administracja systemami w laboratorium fizyki doświadczalnej
-- opracowanie aplikacji do rozpoznawania twarzy z użyciem OpenCV
-- utrzymanie aparatury w laboratorium fizyki doświadczalnej i fizyki medycznej
-- wsparcie przy projektowaniu nowych ćwiczeń laboratoryjnych
-- nadzór nad studentami w zakresie przygotowania do ćwiczeń oraz poprawności
+- Administracja systemami w laboratorium fizyki doświadczalnej
+- Opracowanie aplikacji do rozpoznawania twarzy z użyciem OpenCV
+- Utrzymanie aparatury w laboratorium fizyki doświadczalnej i fizyki medycznej
+- Wsparcie przy projektowaniu nowych ćwiczeń laboratoryjnych
+- Nadzór nad studentami w zakresie przygotowania do ćwiczeń oraz poprawności
     wykonywania pomiarów
-
-### 07.2013 - 09.2013 · Solaris Laser S.A. · Technik Inżynieryjny
-
-**Zakres obowiązków:**
-
-- testy cięcia laserowego z użyciem nowego typu głowicy sterującej wiązką
-- strojenie nowych modułów laserów gazowych
-- pomiary parametrów optycznych głowicy sterującej wiązką
-- testowanie jakości znakowania materiałów różnymi typami głowic
 
 ## Wykształcenie
 
-2018 · Magister inzynier, Fizyka Techniczna (Optoelectronics),
-    Politechnika Łódzka  
-2015 · Inzynier, Fizyka Techniczna (Fizyka komputerowa),
-    Politechnika Łódzka
+- **Magister inzynier**, Fizyka Techniczna (Optoelectronics),
+    Politechnika Łódzka, 2018
+- **Inzynier**, Fizyka Techniczna (Fizyka komputerowa),
+    Politechnika Łódzka, 2015
 
-### Publikacje
+## Publikacje
 
-2015 · **Analytical Kinetic Block Model of Crystal Mother Phase
-    Multilayer Interface**, Zeszyty Naukowe Politechniki Łódzkiej
+**Analytical Kinetic Block Model of Crystal Mother Phase
+    Multilayer Interface**,
+    *Zeszyty Naukowe Politechniki Łódzkiej*, 2015
 
 ## Umiejętności
 
 **Języki programowania:** C++, Python, Bash, Rust, TypeScript  
 **Języki obce:** angielski (B2)  
 **DevOps:** Docker, Ansible  
-**Bazy danych:** Postgres, Redis, MongoDB  
+**Bazy danych:** PostgreSQL (SQLAlchemy ORM)  
 
 ## Przetwarzanie danych osobowych
 

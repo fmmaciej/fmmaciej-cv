@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+NAME="organisciak-maciej"
+
 TEMPLATE="src/templates/eisvogel.latex"
 ASSETS=".:assets:src"
 BUILD_DIR="build"
 PARTIALS_DIR="src/partials"
 
 PDF_ENGINE=xelatex
+
+IDEN="  "
 
 mkdir -p "$BUILD_DIR"
 
@@ -15,14 +19,14 @@ usage() {
 Usage: $0 [--en | --pl | --all]
 
 Options:
-  --en      Build English CV (cv-en.pdf)
-  --pl      Build Polish CV (cv-pl.pdf)
-  --all     Build both versions
+${IDEN}--en      Build English CV (cv-en.pdf)
+${IDEN}--pl      Build Polish CV (cv-pl.pdf)
+${IDEN}--all     Build both versions
 
 Requirements:
-  - Pandoc
-  - LaTeX distribution with XeLaTeX engine (TeX Live or MacTeX or MiKTeX)
-  - LaTeX packages commonly required by Eisvogel template:
+${IDEN}- Pandoc
+${IDEN}- LaTeX distribution with XeLaTeX engine (TeX Live or MacTeX or MiKTeX)
+${IDEN}- LaTeX packages commonly required by Eisvogel template:
 EOF
     exit 1
 }
@@ -30,7 +34,7 @@ EOF
 build_cv() {
     local lang=$1
     local src="src/cv-$lang.md"
-    local out="$BUILD_DIR/cv-$lang.pdf"
+    local out="$BUILD_DIR/cv-$NAME-$lang.pdf"
 
     local header="$PARTIALS_DIR/header.tex"
     local preamble="$PARTIALS_DIR/preamble.tex"
