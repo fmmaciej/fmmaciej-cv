@@ -9,17 +9,38 @@ colorlinks: true
 
 ## Podsumowanie
 
-Jestem inżynierem oprogramowania z ponad 6-letnim doświadczeniem zawodowym,
-specjalizującym się głównie w programowaniu backendowym oraz w systemach
-wbudowanych. Od ponad 15 lat na co dzień korzystam jedynie z systemu Linux, co daje
-mi solidne podstawy w programowaniu niskopoziomowym i rozwiązywaniu problemów
-systemowych. Moje kompetencje obejmują C, C++, Python, Bash, Rust i TypeScript,
-a większość moich projektów koncentrowała się na stosie sieciowym.
-Lubię dzielić się wiedzą, wspierać współpracowników, mam doswiaczenie w mentoringu.
-Jestem takze otwarty na dalszą naukę i rozwój, szczególnie w zakresie
-Linux, backendu oraz AI/ML.
+Jestem inżynierem oprogramowania z ponad 7-letnim doświadczeniem komercyjnym,
+pracującym głównie w obszarze backendu i systemów embedded. Od ponad 15 lat na
+co dzień korzystam z Linuksa, co daje mi mocne podstawy w zakresie programowania
+systemowego oraz diagnozowania problemów technicznych. Najczęściej pracuję z
+językami C, C++, Python, Bash, Rust i TypeScript, a większość moich projektów była
+związana ze stosem sieciowym. W ostatnim czasie rozwijam również doświadczenie w
+programowaniu rozwiązań opartych o modele LLM w Pythonie, w tym narzędzi, integracji
+oraz praktycznych zastosowań modeli językowych. Lubię dzielić się wiedzą, wspierać
+innych i stale poszerzać swoje kompetencje.
 
 ## Doświadczenie
+
+### 2025.11 - obecnie · Python / Django Developer
+
+Praca przy rozwoju i utrzymaniu dużej, wieloletniej platformy e-commerce
+opartej o framework Django. Zakres obowiązków obejmuje rozwój funkcjonalności
+backendowych, usuwanie błędów, generowanie dokumentów, automatyzację
+środowiska oraz wsparcie obszarów związanych z wdrożeniami i utrzymaniem
+starszego stosu technologicznego. W pracy wykorzystywane są m.in. Python,
+Django, PostgreSQL, Celery, Redis, Ansible, Linux oraz środowisko developerskie
+oparte o maszyny wirtualne.
+
+**Zakres obowiązków:**
+
+- Rozwój funkcjonalności w legacy aplikacji Django
+- Analiza i naprawa błędów w istniejącej logice biznesowej
+- Implementacja generowania dokumentów na bazie szablonów
+- Automatyzacja konfiguracji i środowiska z użyciem Ansible
+- Wsparcie działań wdrożeniowych i utrzymaniowych
+
+**Technologie:**
+Python, Django, PostgreSQL, Celery, Redis, Ansible, Linux, Bash
 
 ## Sii Polska (6 lat 9 miesięcy)
 
@@ -143,7 +164,7 @@ C++, Windows, Cygwin
 ## Przetwarzanie danych osobowych
 
 \footnotesize
-Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym CV dla
-potrzeb niezbędnych do realizacji procesu rekrutacji, zgodnie z ustawą o ochronie
+Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym CV
+dla potrzeb niezbędnych do realizacji procesu rekrutacji, zgodnie z ustawą o ochronie
 danych osobowych oraz Rozporządzeniem Parlamentu Europejskiego i Rady (UE)
 2016/679 (RODO).

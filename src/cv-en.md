@@ -9,16 +9,36 @@ colorlinks: true
 
 ## Summary
 
-I am a software engineer with over 6 years of professional experience, working
+I am a software engineer with over 7 years of professional experience, working
 mainly in backend and embedded development. I have been using Linux as a daily
 driver for more than 15 years, which gives me a strong foundation in system-level
-programming and troubleshooting. My expertise includes C, C++, Python, Bash, Rust,
-and TypeScript, with most of my projects focused on the network stack.  
-I enjoy mentoring, sharing knowledge, and supporting my colleagues, and I am eager
-to keep learning and expanding my skills, particularly in backend development and
-AI/ML.
+programming and troubleshooting. My expertise includes C, C++, Python, Bash,
+Rust, and TypeScript, with most of my projects focused on the network stack.
+In recent work, I have also been expanding into Python-based LLM development,
+including tooling, integrations, and practical applications of language models.
+I enjoy mentoring, sharing knowledge, and supporting my colleagues, and I am
+eager to keep learning and broadening my expertise.
 
 ## Experience
+
+### 2025.11 - Present · Python / Django Developer
+
+Developing and maintaining a large legacy e-commerce platform built with Django.
+Responsible for backend features, bug fixing, document generation, environment
+automation, and deployment-related improvements in an older production stack.
+Working with Python, Django, PostgreSQL, Celery, Redis, Ansible, Linux, and VM-based
+development infrastructure.
+
+**Responsibilities:**
+
+- Feature development in a legacy Django application
+- Bug fixing and maintenance of existing business logic
+- PDF/document generation and template-based rendering
+- Environment setup and automation with Ansible
+- Support for deployment and infrastructure-related tasks
+
+Skills:
+Python, Django, PostgreSQL, Celery, Redis, Ansible, Linux, Bash
 
 ### Sii Poland (6 years 9 months)
 
@@ -40,8 +60,6 @@ Team size: 15.
 
 **Skills:**
 Embedded C, Network Stack, RDMA, Windows, PowerShell, Linux, Bash, Python, TypeScript
-
-\newpage
 
 ### 2022.01 - 2024.05 · Python Developer  
 
