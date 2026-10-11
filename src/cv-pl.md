@@ -9,162 +9,181 @@ colorlinks: true
 
 ## Podsumowanie
 
-Jestem inżynierem oprogramowania z ponad 7-letnim doświadczeniem komercyjnym,
-pracującym głównie w obszarze backendu i systemów embedded. Od ponad 15 lat na
-co dzień korzystam z Linuksa, co daje mi mocne podstawy w zakresie programowania
-systemowego oraz diagnozowania problemów technicznych. Najczęściej pracuję z
-językami C, C++, Python, Bash, Rust i TypeScript, a większość moich projektów była
-związana ze stosem sieciowym. W ostatnim czasie rozwijam również doświadczenie w
-programowaniu rozwiązań opartych o modele LLM w Pythonie, w tym narzędzi, integracji
-oraz praktycznych zastosowań modeli językowych. Lubię dzielić się wiedzą, wspierać
-innych i stale poszerzać swoje kompetencje.
+Jestem inżynierem oprogramowania z ponad siedmioletnim doświadczeniem komercyjnym
+w rozwoju backendu i oprogramowania embedded. Od ponad 15 lat korzystam z Linuksa
+jako głównego systemu operacyjnego, co daje mi solidne podstawy w programowaniu
+systemowym i diagnozowaniu problemów. Moje główne kompetencje obejmują Python,
+C/C++, Bash, Rust, TypeScript, sieci, automatyzację i narzędzia dla programistów.
+W ostatnim czasie rozwijam narzędzia i integracje LLM w Pythonie, uzupełniając
+praktykę szkoleniami z inżynierii kontekstu, ewaluacji i rozwoju produktów AI.
 
 ## Doświadczenie
 
-### 2025.11 - obecnie · Python / Django Developer
+### Sii Polska
 
-Praca przy rozwoju i utrzymaniu dużej, wieloletniej platformy e-commerce
-opartej o framework Django. Zakres obowiązków obejmuje rozwój funkcjonalności
-backendowych, usuwanie błędów, generowanie dokumentów, automatyzację
-środowiska oraz wsparcie obszarów związanych z wdrożeniami i utrzymaniem
-starszego stosu technologicznego. W pracy wykorzystywane są m.in. Python,
-Django, PostgreSQL, Celery, Redis, Ansible, Linux oraz środowisko developerskie
-oparte o maszyny wirtualne.
+#### Programista C (embedded) · firmware kart sieciowych Intel RDMA
 
-**Zakres obowiązków:**
+**Okresy:**
 
-- Rozwój funkcjonalności w legacy aplikacji Django
-- Analiza i naprawa błędów w istniejącej logice biznesowej
-- Implementacja generowania dokumentów na bazie szablonów
-- Automatyzacja konfiguracji i środowiska z użyciem Ansible
-- Wsparcie działań wdrożeniowych i utrzymaniowych
+- 2026.07 - obecnie
+- 2024.05 - 2025.09
 
-**Technologie:**
-Python, Django, PostgreSQL, Celery, Redis, Ansible, Linux, Bash
+Pracuję w Sii Polska przy firmware kart sieciowych RDMA dla Intela.
+Wcześniejszy i obecny okres współpracy dotyczą tego samego projektu.
 
-## Sii Polska (6 lat 9 miesięcy)
+Zespół: obecnie 10 osób, wcześniej 15.
 
-### 2024.05 - 2025.09 · Embedded C Developer
+- Rozwijam nowe funkcjonalności firmware i implementuję funkcje zarządzania RDE.
+- Diagnozuję i usuwam błędy w firmware.
 
-Członek zespołu zajmującego się rozwojem i utrzymaniem protokołu RDE w oprogramowaniu
-układowym kart sieciowych Intel RDMA. Dodatkowo, w ramach własnej inicjatywy,
-opanowałem TypeScript i opracowałem dwie wtyczki do Visual Studio Code, które
-znacząco zoptymalizowały procesy projektowe zespołu.
-Dodatkowo przygotowałem kilka narzędzi w Pythonie, które ułatwiły codzienną pracę
-przy rozwoju i walidacji.  
-Zespół: 15 osób.
+**Wewnętrzne narzędzia dla zespołu Sii w tym projekcie:**
 
-**Zakres obowiązków:**
+- Z własnej inicjatywy nauczyłem się języka TypeScript i stworzyłem dwie wtyczki
+  do Visual Studio Code oraz narzędzia w Pythonie wspierające budowanie firmware,
+  diagnostykę, zarządzanie i wdrażanie NVM oraz rejestrowanie logów UART.
+- Wprowadzam projektową bazę wiedzy wspomaganą przez AI "second brain"
+  jako wewnętrzny projekt dodatkowy dla zespołu.
 
-- Rozwój nowych funkcjonalności
-- Usuwanie błędów
-- Implementacja funkcji zarządzania RDE
+**Technologie:** Embedded C, RDMA, Windows, PowerShell, Linux, Bash, Python, TypeScript
 
-**Technologie:**
-Embedded C, Network Stack, RDMA, Windows, PowerShell, Linux, Bash, Python, TypeScript
+#### 2026.04 - 2026.07 · Programista Python
 
-### 2022.01 - 2024.05 · Python Developer
+Rozbudowałem framework automatyzacji testów w Pythonie do walidacji aplikacji
+Open Edge Platform z repozytorium `edge-ai-libraries`.
 
-*(Równolegle pełniłem rolę Administratora Systemów Linux w
-okresie 2022.01–2023.05)*
+Zespół: 8 osób.
 
-Członek międzynarodowego zespołu zlokalizowanego w monachijskim biurze Intela.
-Głównym celem projektu była walidacja sterowników GPU Intela w systemie Linux
-z wykorzystaniem GDB-oneAPI, na szeregu aplikacji naukowych napisanych w C++
-z rozszerzeniami DPC++ i SYCL.  
+- Zrefaktoryzowałem starsze komponenty frameworka, poprawiając czytelność,
+  łatwość utrzymania i możliwość ponownego wykorzystania kodu.
+- Przeprojektowałem i uprościłem system logowania frameworka.
+- Dodałem funkcje pomocnicze wielokrotnego użytku do walidacji z wykorzystaniem
+  Docker Compose i Kubernetes/Helm.
+- Zaimplementowałem automatyczne testy wybranych aplikacji Open Edge Platform,
+  obejmujące sprawdzanie endpointów HTTP, walidację strumieni i weryfikację
+  gotowości usług.
+- Usprawniłem diagnostykę błędów dzięki czytelniejszym asercjom, obsłudze limitów
+  czasu i weryfikacji stanu.
+- Diagnozowałem problemy z kontenerami, podami, usługami, przekierowaniem portów
+  i działaniem aplikacji.
+
+**Technologie:** Python, Docker, Docker Compose, Kubernetes, Helm, HTTP
+
+#### 2022.01 - 2024.05 · Programista Python
+
+Walidowałem sterowniki GPU Intela w Linuksie z wykorzystaniem GDB-oneAPI
+i aplikacji naukowych napisanych w C++ z rozszerzeniami DPC++ i SYCL.
+Pracowałem w międzynarodowym, 6-osobowym zespole zlokalizowanym w monachijskim
+biurze Intela.
+
+*Równolegle pełniłem rolę administratora systemów Linux od 2022.01 do 2023.05.*
+
+- Opracowałem framework w Pythonie do przygotowywania środowiska, kompilowania
+  aplikacji i uruchamiania automatycznych testów za pomocą własnych skryptów GDB.
+- Zintegrowałem aplikacje C++/DPC++/SYCL z procesem kompilacji i walidacji.
+- Wprowadzałem poprawki w C++ wspierające zadania walidacyjne.
+
+**Technologie:** Python, C++, CMake, Bash, GDB-oneAPI, DPC++, SYCL, Linux
+
+#### 2019.01 - 2023.05 · Administrator systemów Linux
+
+Walidowałem sterowniki kart sieciowych RDMA Intela w różnych dystrybucjach Linuksa,
+w tym Red Hat, SLES, Ubuntu, CentOS, Debian, Rocky Linux, openEuler i Anolis.
+
 Zespół: 6 osób.
 
-**Zakres obowiązków:**  
+- Instalowałem, konfigurowałem i utrzymywałem linuksowe środowiska walidacyjne.
+- Utrzymywałem framework automatyzacji wykorzystujący Bash, Python i Ansible.
+- Wykonywałem testy walidacyjne oraz zgłaszałem i śledziłem błędy sterowników.
+- Oceniałem kandydatów podczas rekrutacji i prowadziłem mentoring dwóch
+  inżynierów, każdego przez około rok.
 
-- Tworzenie frameworka w Pythonie odpowiedzialnego za przygotowanie środowiska,
-    kompilację wyznaczonych aplikacji i uruchamianie testów (za pomocą własnych
-    skryptów GDB)
-- Ścisła współpraca z kodem w C++ w celu zapewnienia poprawnej kompilacji i
-    integracji testów aplikacji naukowych (C++/DPC++/SYCL)
-- Wprowadzanie drobnych poprawek i modyfikacji w kodzie C++ wspierających zadania
-    walidacyjne
+**Technologie:** Linux, RDMA, Bash, Python, Ansible, Tcl
 
-**Technologie:**
-Python, CMake, Bash, GDB-oneAPI, Linux
+### Freelance
 
-### 2019.01 - 2023.05 · Linux System Administrator
+#### 2025.11 - obecnie · Programista Python / Django (współpraca dorywcza)
 
-*(Równolegle pełniłem rolę Python Developera w
-okresie 2022.01–2023.05)*
+Rozwijam i utrzymuję dużą, wieloletnią platformę e-commerce opartą na Django.
 
-Głównym celem projektu była walidacja sterowników kart sieciowych RDMA Intela
-w róznych dystrybucjach Linuksa (RedHat, SLES, Ubuntu, CentOS, Debian, Rocky
-Linux, OpenEuler, Anolis). Oprócz obowiązków technicznych pełniłem rolę asesora
-technicznego podczas wielu procesów rekrutacyjnych. Prowadziłem mentoring dwóch
-inżynierów, każdy przez okolo rok, wspierając ich rozwój zawodowy.  
-Zespół: 6 osób.
+*Dorywcza współpraca freelance, prowadzona równolegle z projektami Sii od 2026.04.*
 
-**Zakres obowiązków:**
+- Rozwijam funkcjonalności backendowe, usuwam błędy i utrzymuję istniejącą
+  logikę biznesową.
+- Implementuję generowanie plików PDF i dokumentów na podstawie szablonów.
+- Automatyzuję konfigurację środowisk programistycznych opartych na maszynach
+  wirtualnych za pomocą Ansible.
+- Wspieram wdrożenia i zadania związane z infrastrukturą.
 
-- instalacja, konfiguracja i utrzymanie systemów operacyjnych Linux
-- utrzymanie frameworka automatyzacji (Bash, Python, Ansible)
-- wykonywanie testów walidacyjnych
-- raportowanie i śledzenie błędów
+**Technologie:** Python, Django, PostgreSQL, Celery, Redis, Ansible, Linux, Bash
 
-**Technologie:**
-Administracja systemami Linux, Network Stack, RDMA, Bash, Python, Ansible, TCL
+### Natek Polska
 
-## Natek Polska (3 miesiące)
+#### 2018.09 - 2019.01 · Programista C++
 
-### 2018.09 - 2019.01 · C++ Developer
+Pracowałem nad oprogramowaniem bezpiecznych układów stosowanych w kartach
+płatniczych i dokumentach tożsamości.
 
-Członek zespołu rozwijającego oprogramowanie w C++ dla bezpiecznych układów
-stosowanych w kartach płatniczych.
-Główny wkład obejmował utrzymanie kodu i naprawę błędów, a przy tym zdobycie
-doświadczenia z praktykami bezpiecznego programowania, ograniczeniami sprzętowymi
-oraz dużą bazą kodu C++.
+- Utrzymywałem dużą bazę kodu C++ i usuwałem błędy.
+- Współpracowałem z zespołem przy bezpiecznym wytwarzaniu oprogramowania,
+  poznając ograniczenia sprzętowe.
 
-**Zakres obowiązków:**
+**Technologie:** C++, Windows, Cygwin
 
-- Utrzymanie i rozwój istniejącej bazy kodu w C++
-- Poprawianie błędów
-- Współpraca z zespołem w zakresie procesów bezpiecznego wytwarzania oprogramowania
+### Politechnika Łódzka
 
-**Technologie:**
-C++, Windows, Cygwin
+#### 2015.01 - 2016.07 · Technik laboratoryjny
 
-## Politechnika Łódzka (1 rok 6 miesięcy)
+Wspierałem pracę laboratoriów fizyki doświadczalnej i medycznej.
 
-### 2015.01 - 2016.07 · Technik Laboratoryjny
+- Administrowałem systemami laboratoryjnymi i utrzymywałem aparaturę
+  w laboratoriach fizyki doświadczalnej i medycznej.
+- Opracowałem aplikację do rozpoznawania twarzy z wykorzystaniem OpenCV.
+- Pomagałem projektować ćwiczenia laboratoryjne i nadzorowałem przygotowanie
+  studentów oraz wykonywane przez nich pomiary.
 
-**Zakres obowiązków:**  
+**Technologie:** OpenCV
 
-- Administracja systemami w laboratorium fizyki doświadczalnej
-- Opracowanie aplikacji do rozpoznawania twarzy z użyciem OpenCV
-- Utrzymanie aparatury w laboratorium fizyki doświadczalnej i fizyki medycznej
-- Wsparcie przy projektowaniu nowych ćwiczeń laboratoryjnych
-- Nadzór nad studentami w zakresie przygotowania do ćwiczeń oraz poprawności
-    wykonywania pomiarów
+## Umiejętności
+
+- **Języki programowania:** Python, C, C++, Bash, TypeScript, Rust
+- **Backend i bazy danych:** Django, PostgreSQL, Celery, Redis, SQLAlchemy
+- **Systemy i automatyzacja:** Linux, RDMA, Docker, Docker Compose, Kubernetes,
+  Helm, Ansible
+- **AI/LLM (praktyka):** narzędzia i integracje w Pythonie,
+  zarządzanie wewnętrzną wiedzą zespołu z wykorzystaniem AI
+- **AI/LLM (szkolenia):** integracja API modeli LLM, inżynieria kontekstu,
+  ewaluacja, rozwój produktów AI
+- **Języki obce:** angielski (B2)
+
+## Kursy i szkolenia
+
+| Szkolenie                                         | Organizator             | Data    |
+| ------------------------------------------------- | ----------------------- | ------- |
+| AI_devs 4 - Builders                              | BRAVE                   | 2026.10 |
+| AI Product Heroes 2                               | BRAVE                   | 2026.09 |
+| AI dla programistów Python                        | Future Skills Institute | 2025.06 |
+| Wprowadzenie do Machine Learning                  | Future Skills Institute | 2025.05 |
+| Clean Code i refaktoryzacja - poziom zaawansowany | Future Skills Institute | 2025.01 |
+| UML Fundamentals                                  | Future Skills Institute | 2024.09 |
+| Wzorce projektowe w Pythonie                      | testuj.pl               | 2023.10 |
+| Wzorce projektowe w C++                           | testuj.pl               | 2023.09 |
 
 ## Wykształcenie
 
-- **Magister inzynier**, Fizyka Techniczna (Optoelectronics),
+- **Magister inżynier**, fizyka techniczna (optoelektronika),
     Politechnika Łódzka, 2018
-- **Inzynier**, Fizyka Techniczna (Fizyka komputerowa),
+- **Inżynier**, fizyka techniczna (fizyka komputerowa),
     Politechnika Łódzka, 2015
 
 ## Publikacje
 
-**Analytical Kinetic Block Model of Crystal Mother Phase
-    Multilayer Interface**,
+- **Analytical Kinetic Block Model of Crystal Mother Phase
+    Multilayer Interface**
     *Zeszyty Naukowe Politechniki Łódzkiej*, 2015
-
-## Umiejętności
-
-**Języki programowania:** C++, Python, Bash, Rust, TypeScript  
-**Języki obce:** angielski (B2)  
-**DevOps:** Docker, Ansible  
-**Bazy danych:** PostgreSQL (SQLAlchemy ORM)  
 
 ## Przetwarzanie danych osobowych
 
 \footnotesize
-Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w niniejszym CV
-dla potrzeb niezbędnych do realizacji procesu rekrutacji, zgodnie z ustawą o ochronie
-danych osobowych oraz Rozporządzeniem Parlamentu Europejskiego i Rady (UE)
-2016/679 (RODO).
+Wyrażam zgodę na przetwarzanie moich danych osobowych na potrzeby procesów
+rekrutacyjnych zgodnie z obowiązującymi przepisami dotyczącymi ochrony
+danych osobowych.
