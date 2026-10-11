@@ -76,7 +76,7 @@ The generated PDFs are placed in the `build/` directory:
 - `cv-organisciak-maciej-en.pdf` – English version
 - `cv-organisciak-maciej-pl.pdf` – Polish version
 
-The script resolves paths relative to its own location. CVs build sequentially (EN, then PL); published PDFs are replaced only after all requested builds succeed. Full Pandoc and LaTeX output is saved under `build/diagnostics/run-*/`.
+The script resolves paths relative to its own location. CVs build sequentially (EN, then PL); published PDFs are replaced only after all requested builds succeed. Full Pandoc and LaTeX output is saved in `build/en.log` and `build/pl.log`. Each language build overwrites its previous log.
 
 ## Checks and updates
 
@@ -88,9 +88,13 @@ The script resolves paths relative to its own location. CVs build sequentially (
 
 Checks and template updates preserve the published PDFs. The updater verifies the archive SHA-256, extracts the standalone template and tries both CVs before installing it. Its version and checksums are recorded in `src/templates/eisvogel.version.json`.
 
-Before replacing both PDFs or the template and manifest, the script saves existing files under `build/diagnostics/run-*/backup/`. If a replacement fails, it restores the previous files and removes results that did not previously exist. If restoration fails, the error message points to the backups for manual recovery.
+Builds use a temporary directory inside `build/`, removed when the script exits, including on handled `INT` or `TERM`. Publishing rejects symbolic links as destinations, including dangling links.
 
-Pair replacement rejects symbolic links as destinations, including dangling links. An `INT` or `TERM` during replacement may trigger restoration. Restoration commands ignore these signals while the script records the interruption and defers exiting until the entire pair has been replaced or restored, then reports the result and diagnostic directory.
+Files are published sequentially with `mv`. A publication error or interruption can leave a partially updated pair. Rebuild the PDFs with `./build.sh --all`. To recover the template and manifest after an incomplete update, restore both from Git before retrying:
+
+```bash
+git restore -- src/templates/eisvogel.latex src/templates/eisvogel.version.json
+```
 
 Keep CV styling in `pandoc.yaml` and `src/partials/`; local edits to the upstream template block subsequent updates. After updating, run `--all` and review the page layout. Markdown linting remains available in VS Code.
 

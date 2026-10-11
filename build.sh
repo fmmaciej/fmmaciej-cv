@@ -54,24 +54,32 @@ for file in pandoc.yaml src/templates/eisvogel.latex src/partials/{preamble,iden
     [ -r "$file" ] || fail "Required file not found: $file"
 done
 
-mkdir -p "$BUILD_DIR/diagnostics"
+mkdir -p "$BUILD_DIR"
 LOCK_DIR="$BUILD_DIR/.build-lock"
 mkdir "$LOCK_DIR" 2>/dev/null || fail "Another build or update is running: $LOCK_DIR"
-trap 'rmdir "$LOCK_DIR"' EXIT
+RUN_DIR=
+cleanup() {
+    if [ -n "$RUN_DIR" ]; then
+        rm -rf "$RUN_DIR" || true
+    fi
+    rmdir "$LOCK_DIR"
+}
+trap cleanup EXIT
 trap 'exit 130' INT
 trap 'exit 143' TERM
-RUN_DIR=$(mktemp -d "$BUILD_DIR/diagnostics/run-XXXXXX")
+RUN_DIR=$(mktemp -d "$BUILD_DIR/.work-XXXXXX")
 
 build_cv() {
     local lang=$1 template=${2:-$TEMPLATE}
+    local log="$BUILD_DIR/$lang.log"
     for file in "src/cv-$lang.md" "src/partials/lang-$lang.tex"; do
         [ -r "$file" ] || { printf 'Required file not found: %s\n' "$file" >&2; return 1; }
     done
-    printf 'Building %s...\n' "$lang"
+    printf 'Building %s... Log: %s\n' "$lang" "$log"
     if ! pandoc "src/cv-$lang.md" --defaults pandoc.yaml --template "$template" \
             -H "src/partials/lang-$lang.tex" --verbose \
-            -o "$RUN_DIR/cv-$NAME-$lang.pdf" > "$RUN_DIR/$lang.log" 2>&1; then
-        printf 'Build failed (%s). Log: %s\n' "$lang" "$RUN_DIR/$lang.log" >&2
+            -o "$RUN_DIR/cv-$NAME-$lang.pdf" > "$log" 2>&1; then
+        printf 'Build failed (%s). Log: %s\n' "$lang" "$log" >&2
         return 1
     fi
 }
@@ -82,50 +90,15 @@ build_both() {
     build_cv pl "$template"
 }
 
-replace_pair() {
-    local source_dir=$1 destination_dir=$2 backup="$RUN_DIR/backup" file
-    local signal_status=0 result
-    mkdir "$backup"
-    for file in "$3" "$4"; do
-        [ ! -L "$destination_dir/$file" ] ||
-            fail "Cannot replace symbolic link: $destination_dir/$file"
-        if [ -e "$destination_dir/$file" ]; then
-            cp -p "$destination_dir/$file" "$backup/$file" ||
-                fail "Cannot back up: $destination_dir/$file"
-        fi
-    done
-    trap 'signal_status=130' INT
-    trap 'signal_status=143' TERM
-    if mv "$source_dir/$3" "$destination_dir/$3" &&
-            mv "$source_dir/$4" "$destination_dir/$4"; then
-        result=updated
-    else
-        # Keep restoration commands alive when a signal reaches the process group.
-        for file in "$3" "$4"; do
-            if [ -e "$backup/$file" ]; then
-                (trap '' INT TERM; exec cp -p "$backup/$file" "$destination_dir/$file") ||
-                    fail "Cannot restore files. Backups: $backup"
-            else
-                (trap '' INT TERM; exec rm -f "$destination_dir/$file") ||
-                    fail "Cannot restore missing files. Backups: $backup"
-            fi
-        done
-        result=restored
-    fi
-    trap 'exit 130' INT
-    trap 'exit 143' TERM
-    if [ "$signal_status" -ne 0 ]; then
-        printf 'Interrupted; files %s. Diagnostics: %s\n' "$result" "$RUN_DIR" >&2
-        exit "$signal_status"
-    fi
-    [ "$result" = updated ] ||
-        fail "Replacement failed; previous files restored. Backups: $backup"
-}
-
 update_eisvogel() {
+    local file
     python3 tools/update_eisvogel.py "$VERSION" "$RUN_DIR/update"
     build_both "$RUN_DIR/update/eisvogel.latex"
-    replace_pair "$RUN_DIR/update" "$ROOT_DIR/src/templates" eisvogel.latex eisvogel.version.json
+    for file in eisvogel.latex eisvogel.version.json; do
+        [ ! -L "$ROOT_DIR/src/templates/$file" ] ||
+            fail "Cannot replace symbolic link: $ROOT_DIR/src/templates/$file"
+        mv "$RUN_DIR/update/$file" "$ROOT_DIR/src/templates/$file"
+    done
     printf 'Template updated. Run --all to rebuild the published PDFs.\n'
 }
 
@@ -143,12 +116,11 @@ case "$MODE" in
             --pl) build_cv pl ;;
             --all) build_both ;;
         esac
-        if [ "$MODE" = --all ]; then
-            replace_pair "$RUN_DIR" "$BUILD_DIR" "cv-$NAME-en.pdf" "cv-$NAME-pl.pdf"
-        else
-            mv "$RUN_DIR"/*.pdf "$BUILD_DIR/"
-        fi
+        for file in "$RUN_DIR"/*.pdf; do
+            [ ! -L "$BUILD_DIR/${file##*/}" ] ||
+                fail "Cannot replace symbolic link: $BUILD_DIR/${file##*/}"
+            mv "$file" "$BUILD_DIR/"
+        done
         printf 'Done. PDFs: %s\n' "$BUILD_DIR"
         ;;
 esac
-printf 'Logs: %s\n' "$RUN_DIR"
