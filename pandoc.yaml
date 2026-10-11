@@ -1,0 +1,17 @@
+from: markdown
+pdf-engine: xelatex
+resource-path:
+  - ${.}
+  - ${.}/assets
+  - ${.}/src
+include-in-header:
+  - ${.}/src/partials/preamble.tex
+  - ${.}/src/partials/identity.tex
+include-before-body:
+  - ${.}/src/partials/header.tex
+variables:
+  colorlinks: true
+  linkcolor: "[HTML]{A50000}"
+  filecolor: "[HTML]{A50000}"
+  urlcolor: "[HTML]{4077C0}"
+  citecolor: "[HTML]{4077C0}"

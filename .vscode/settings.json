@@ -4,13 +4,13 @@
 		{
 			"task": "cv-en",
 			"label": "$(globe) CV EN",
-			"tooltip": "Generate cv-en.pdf using Eisvogel"
+			"tooltip": "Generate cv-organisciak-maciej-en.pdf"
 		},
 
 		{
 			"task": "cv-pl",
 			"label": "$(file-pdf) CV PL",
-			"tooltip": "Generate cv-pl.pdf using Eisvogel"
+			"tooltip": "Generate cv-organisciak-maciej-pl.pdf"
 		},
 
 		{
